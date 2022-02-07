@@ -34,13 +34,17 @@
    1. Without Auth: 
 
         php artisan ui bootstrap
+
     	php artisan ui vue              <-
+
     	php artisan ui react
 
    2. With Auth:
 
     	php artisan ui bootstrap --auth
+
     	php artisan ui vue --auth
+        
     	php artisan ui react --auth
 
 ## Step 5: Run npm install && npm run dev command
