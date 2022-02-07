@@ -35,9 +35,9 @@
 
         php artisan ui bootstrap
 
-    	php artisan ui vue              <-
+        php artisan ui vue              <-
 
-    	php artisan ui react
+        php artisan ui react
 
    2. With Auth:
 
@@ -49,7 +49,7 @@
 
 ## Step 5: Run npm install && npm run dev command
 
-	npm install && npm run dev
+    npm install && npm run dev
 
 ## Step 6: Migrate your database
 
