@@ -29,19 +29,19 @@
 
 ## Step 4: Step up Auth Scaffolding 
 
-	use anyone for you requirements
+   use anyone for you requirements
 
-    1. Without Auth: 
+   1. Without Auth: 
 
-	php artisan ui bootstrap
-	php artisan ui vue              <-
-	php artisan ui react
+        php artisan ui bootstrap
+    	php artisan ui vue              <-
+    	php artisan ui react
 
-    2. With Auth:
+   2. With Auth:
 
-	php artisan ui bootstrap --auth
-	php artisan ui vue --auth
-	php artisan ui react --auth
+    	php artisan ui bootstrap --auth
+    	php artisan ui vue --auth
+    	php artisan ui react --auth
 
 ## Step 5: Run npm install && npm run dev command
 
@@ -49,65 +49,65 @@
 
 ## Step 6: Migrate your database
 
- 	php artisan migrate
+    php artisan migrate
 
 Now our Laravel 8 authentication system is ready. you can run serve 
 
- 	php artisan serve
+    php artisan serve
 	
 
 ## Step 7: Configuration
 
 ## 1. resources/js/components/ExampleComponent.vue
 
-<template>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">Example Component</div>
-                    <div class="card-body">
-                        I'm an example component.
+    <template>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card">
+                        <div class="card-header">Example Component</div>
+                        <div class="card-body">
+                            I'm an example component.
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</template>
+    </template>
 
-<script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
+    <script>
+        export default {
+            mounted() {
+                console.log('Component mounted.')
+            }
         }
-    }
-</script>
+    </script>
 
 ## 2. resources/js/components/app.js
 
-require('./bootstrap');
+    require('./bootstrap');
 
-window.Vue = require('vue').default;
+    window.Vue = require('vue').default;
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+    Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
-const app = new Vue({
-    el: '#app',
-});
+    const app = new Vue({
+        el: '#app',
+    });
 
 
 ## 3. resources/views/app.blade.php
 
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-</head>
-<body>
+    <!DOCTYPE html>
+    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Laravel</title>
+        <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    </head>
+    <body>
 
     <!-- Vue root DOM -->
     <div id="app">
@@ -122,10 +122,9 @@ const app = new Vue({
 
 ## 4. routes/web.php
 
-
-Route::get('/', function () {
-    return view('app');
-});
+    Route::get('/', function () {
+        return view('app');
+    });
 
 
 
